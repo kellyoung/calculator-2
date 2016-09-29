@@ -27,7 +27,7 @@ def calculator():
             
             #only process if value1 is type int
             try:
-                value1 = int(value1)
+                value1 = float(value1)
                 if operator == "square":
                     print square(value1)
                 elif operator == "cube":
@@ -43,8 +43,8 @@ def calculator():
 
             #only process if value1 and value2 are type int
             try:
-                value1 = int(value1)
-                value2 = int(value2)
+                value1 = float(value1)
+                value2 = float(value2)
                 if operator == "+" or operator == "add":
                     print add(value1, value2)
                 elif operator == "-" or operator == "subtract":
